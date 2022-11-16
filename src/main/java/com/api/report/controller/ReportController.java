@@ -26,6 +26,7 @@ public class ReportController {
 
 	@GetMapping("/api/report")
 	public ResponseEntity<byte[]> getReport() {
+		logger.info("getReport()  -- START");
 		StringBuilder reportContent = new StringBuilder();
 		reportContent.append("Header of Report -->>>>");
 		reportContent.append(String.format("%n"));
